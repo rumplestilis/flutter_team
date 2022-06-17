@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wab_signin_signup/custom.dart';
+import 'package:http/http.dart' as http;
 import 'package:wab_signin_signup/signIn.dart';
 import 'package:wab_signin_signup/signUp.dart';
 
@@ -161,7 +164,9 @@ class _Reservation extends State<Reservation> {
                     ],
                   ),
                   SizedBox(height: 20),
-                 ElevatedButton(onPressed: (){}, child: Text("Confirme"))
+                 ElevatedButton(onPressed: (){
+
+                 }, child: Text("Confirme"))
                 ],
               ),
             ),
@@ -210,7 +215,7 @@ class _Reservation extends State<Reservation> {
             SizedBox(
               height: 10,
             ),
-            RoundBtn("Buy", context, null)
+            RoundBtn(name: "Buy", onclickedRoundBtn: (){})
           ]),
         ),
       ),
