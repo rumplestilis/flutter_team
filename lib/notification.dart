@@ -35,9 +35,9 @@ class _Notification extends State<NotificationPage> {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            blurRadius: 10,
+            blurRadius: 8,
               offset: Offset(0.1,0.1),
-              color: Colors.cyan
+              color: Colors.grey
           )
         ]
       ),

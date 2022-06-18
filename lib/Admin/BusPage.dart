@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import '../custom.dart';
-import 'Bus.dart';
+import '../WabClasses/Bus.dart';
 import 'BusList.dart';
 import 'Utils.dart';
 

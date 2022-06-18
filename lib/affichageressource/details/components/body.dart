@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:wab_signin_signup/WabClasses/Users.dart';
 import 'package:wab_signin_signup/affichageressource/details/components/ticket_info.dart';
 import 'package:http/http.dart' as http;
 
@@ -78,7 +79,8 @@ class Body extends StatelessWidget {
             FloatingActionButton.extended(
               heroTag: null,
               onPressed: () {
-                apiTest();// Add your onPressed code here!
+                apiTest();//
+                Users users = new Users(nom: "Raat", prenom: "coll", telephone: "56665", email: "exEmail", mot_de_passe: "exMdp");// Add your onPressed code here!
       },  backgroundColor: kSecondaryColor,
               icon: const Icon(Icons.send),
               label: const Text('Valider'),
